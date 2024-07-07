@@ -8,7 +8,7 @@ type GreetingContainerPropsType = {
 }
 
 export const pureAddUser = (name: string, setError: (value: string) => void, setName: (name: string) => void, addUserCallback: (name: string) => void) => {
-    if (name === '') {
+    if (name.trim().length === 0) {
         setError('Ошибка! Введите имя!')
     } else {
         addUserCallback(name)
@@ -18,7 +18,7 @@ export const pureAddUser = (name: string, setError: (value: string) => void, set
 }
 
 export const pureOnBlur = (name: string, setError: (value: string) => void) => {
-    if (name === '') {
+    if (name.trim().length === 0) {
         setError('Ошибка! Введите имя!')
     }
     // если имя пустое - показать ошибку
