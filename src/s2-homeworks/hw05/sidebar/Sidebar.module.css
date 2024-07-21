@@ -7,7 +7,6 @@
 
 .sidebar.open {
     display: block;
-
 }
 
 .background {
@@ -32,7 +31,7 @@
     gap: 45px;
 }
 
-.nav a {
+.notActive {
     text-decoration: none;
     color: black;
 }
@@ -41,7 +40,7 @@
     color: #58acff;
 }
 
-.nav a.active {
+.active {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #0059b2;
@@ -56,10 +55,10 @@
     z-index: 111;
     top: 16px;
     left: 269px;
-    background: none; /* Убираем фоновый цвет */
-    border: none; /* Убираем границу */
-    padding: 0; /* Убираем отступы */
-    cursor: pointer; /* Меняем курсор на указатель */
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .close img {
