@@ -1,4 +1,9 @@
 .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 12px;
+    margin-top: 30px;
 }
 
 .clock {
@@ -11,4 +16,5 @@
 }
 
 .more {
+    opacity: 0.5;
 }

@@ -33,8 +33,8 @@ function Clock() {
 
     const stringTime =
               date.getHours().toString() +
-        ':' + date.getMinutes().toString() +
-        ':' + date.getSeconds().toString() || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
+        ':' + date.getMinutes().toString().padStart(2, '0') +
+        ':' + date.getSeconds().toString().padStart(2, '0') || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
     const stringDate =
         date.getDate().toString().padStart(2, '0') + '.' +
         (date.getMonth() + 1).toString().padStart(2, '0') + '.' +

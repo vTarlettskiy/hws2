@@ -1,6 +1,6 @@
 .item {
     border-bottom: 1px solid #E5E5E5;
-
+    padding: 10px 0;
 }
 
 .item:last-of-type {
@@ -8,8 +8,6 @@
 }
 
 .users {
-    display: flex;
-    flex-direction: column;
     gap: 16px;
     width: 606px;
     color: black;
@@ -23,7 +21,6 @@
     flex-direction: row;
     justify-content: right;
     gap: 12px;
-
     margin-bottom: 18px;
 }
 
@@ -37,18 +34,18 @@
     color: black;
     vertical-align: middle;
     text-align: left;
-    padding: 7px 0 0 0;
-    display: flex;
 
 }
 
 .nameCol {
-    padding-right: 218px;
     padding-left: 17px;
     font-family: Roboto, sans-serif;
     font-weight: 300;
     font-size: 14px;
+    text-align: left;
 }
 
 .ageCol {
+    text-align: left; /* Выравнивание текста */
+    /*text-align: right;*/
 }
