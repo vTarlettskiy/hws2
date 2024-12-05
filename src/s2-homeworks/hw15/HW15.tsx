@@ -69,7 +69,7 @@ const HW15 = () => {
         setPage(newPage)
         setCount(newCount)
 
-        sendQuery({sort, page, count})
+        sendQuery({sort, page: newPage, count: newCount})
         setSearchParams({ sort, page: newPage.toString(), count: newCount.toString() })
 
         // setPage(
@@ -87,8 +87,8 @@ const HW15 = () => {
         setSort(newSort)
         setPage(1)
 
-        sendQuery({newSort, page, count})
-        setSearchParams({ sort: newSort, page: page.toString(), count: count.toString() })
+        sendQuery({sort: newSort, page: 1, count})
+        setSearchParams({ sort: newSort, page: '1', count: count.toString() })
 
         // setSort(
         // setPage(1) // при сортировке сбрасывать на 1 страницу
